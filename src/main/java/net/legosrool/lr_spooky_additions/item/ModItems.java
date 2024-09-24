@@ -2,6 +2,7 @@ package net.legosrool.lr_spooky_additions.item;
 
 import net.legosrool.lr_spooky_additions.LR_Spooky_Additions;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -12,4 +13,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> SCUTTLES = ITEMS.register("scuttles",
             ()-> new Item(new Item.Properties().food(ModFoods.SCUTTLES)));
+
+
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 }

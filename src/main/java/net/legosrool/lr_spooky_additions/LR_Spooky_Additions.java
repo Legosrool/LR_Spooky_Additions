@@ -1,6 +1,7 @@
 package net.legosrool.lr_spooky_additions;
 
 import com.mojang.logging.LogUtils;
+import net.legosrool.lr_spooky_additions.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +28,10 @@ public class LR_Spooky_Additions
     public LR_Spooky_Additions()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+
+
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
