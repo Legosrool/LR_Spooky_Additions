@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "lr_spooky_additions:item/chuckles_bar"
+  }
+}

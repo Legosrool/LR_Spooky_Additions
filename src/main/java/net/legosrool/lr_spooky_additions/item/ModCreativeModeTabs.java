@@ -19,11 +19,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.lr_spooky_additions_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
 
+
+                    output.accept(ModItems.BEECES_CUP.get());
+                    output.accept(ModItems.CHUCKLES_BAR.get());
                     output.accept(ModItems.SCUTTLES.get());
-
-
-
-
 
 
 
