@@ -13,10 +13,6 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LR_Spooky_Additions.MOD_ID);
 
-    public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
-
     public static final RegistryObject<CreativeModeTab> LR_SPOOKY_ADDITIONS_TAB = CREATIVE_MODE_TABS
             .register("lr_spooky_additions_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SCUTTLES
                             .get()))
@@ -33,4 +29,10 @@ public class ModCreativeModeTabs {
 
                     }))
                             .build());
+
+
+
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
 }

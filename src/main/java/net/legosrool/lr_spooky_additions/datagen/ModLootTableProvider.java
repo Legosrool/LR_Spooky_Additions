@@ -1,5 +1,6 @@
 package net.legosrool.lr_spooky_additions.datagen;
 
+
 import net.legosrool.lr_spooky_additions.datagen.loot.ModBlockLootTables;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;

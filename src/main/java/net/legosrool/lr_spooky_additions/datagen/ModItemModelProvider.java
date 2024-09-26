@@ -1,5 +1,6 @@
 package net.legosrool.lr_spooky_additions.datagen;
 
+
 import net.legosrool.lr_spooky_additions.LR_Spooky_Additions;
 import net.legosrool.lr_spooky_additions.item.ModItems;
 import net.minecraft.data.PackOutput;
@@ -22,10 +23,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
-            new ResourceLocation("item/generated")).texture("layer0",
-            new ResourceLocation(LR_Spooky_Additions.MOD_ID, "item/" + item.getId().getPath()));
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(LR_Spooky_Additions.MOD_ID,"item/" + item.getId().getPath()));
     }
-
-
-
 }
+
+
+
